@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@material-ui/icons": "^4.11.3",
+    "@mui/material": "^5.10.12",
+    "cypress": "^11.1.0",
+    "date-fns": "^2.29.3",
+    "react": "^17.0.2",
+    "react-date-range": "^1.4.0"
+  }
+}
