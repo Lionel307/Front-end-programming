@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Slackr</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- You can add your styles and scripts here -->
+  <link rel="stylesheet" type="text/css" media="screen" href="styles/provided.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">  <script type="module" src="src/helpers.js"></script>
+  <script type="module" src="src/helpers.js"></script>
+</head>
+
+<body>
+  <!-- This is an example app structure, you can modify this as much as you choose -->
+  <div id="logged-out" class="background">
+    <header class="banner">
+      <div><img class="logo center" src="slack-svgrepo-com.svg" alt="Slackr Logo"></div>
+      
+      <h1 style="color: white;">Welcome to Slackr</h1>
+
+    </header>
+    <main role="main">
+      
+        <div id="login-page">
+          <h3 style="padding-bottom: 15px; color: white;">Login with your email</h3>
+          
+          <div class="form-floating mb-4 black">
+              <input type="email" class="form-control" id="email-login" placeholder="name@example.com">
+              <label for="email-login">Email address</label>
+          </div>
+          <div class="form-floating mb-4 black">
+              <input type="password" class="form-control" id="password-login" placeholder="Password">
+              <label for="password-login">Password</label>
+          </div>
+          <!-- TAKE TO REGISTER PAGE -->
+          <p style="color: white;">Not a member? <span id="register-link" class="link">Register</span></p>
+          <button type="submit" id="submit-login" class="btn btn-primary" style="width: 360px; font-size: 18px;" >Login</button>
+        </div>
+  
+  
+        <div id="register-page">
+          <h3 style="padding-bottom: 15px; color: white;">Register with your email</h3>
+  
+          <div class="form-floating mb-4 black">
+            <input type="text" class="form-control" id="name" placeholder="name@example.com">
+            <label for="name">Name</label>
+          </div>
+  
+          <div class="form-floating mb-4 black">
+            <input type="email" class="form-control" id="email-register" placeholder="name@example.com">
+            <label for="email-register">Email address</label>
+          </div>
+          
+          <div class="form-floating mb-4 black">
+            <input type="password" class="form-control" id="password-register-1" placeholder="Password">
+            <label for="password-register-1">Password</label>
+          </div>
+  
+          <div class="form-floating black">
+            <input type="password" class="form-control" id="password-register-2" placeholder="Confirm Password">
+            <label for="password-register-2">Confirm Password</label>
+          </div>
+  
+          <!-- TAKE TO LOGIN PAGE -->
+          <p style="color: white;">Not a member? <span id="login-link" class="link">Login here</span></p>
+          
+          <button type="submit" id="submit-register" class="btn btn-primary" style="width: 360px; font-size: 18px;" >Register</button>
+        </div>
+      
+
+        
+    </main>
+    <footer>
+      <p>&copy; Slackr</p>
+    </footer>
+  </div>
+  <div id="home-page" class="background">
+    <div id="top-bar">
+      <h1>Slackr</h1>
+      <h3> <span id="hello-banner">Hello </span><span id="welcome-banner">, Welcome to </span></h3>
+      <div id="profile"></div>
+      <button type="button" id="logout-button" class="btn btn-secondary">Logout</button>
+    </div>
+    <!-- https://www.w3schools.com/howto/howto_css_sidebar_responsive.asp -->
+    <div id="sidebar" class="sidebar-style">
+      <h3 style="text-align: center;">Channels</h3>
+      <div id="channel-list"></div>
+      <button type="button" id="create-channel" class="btn btn-light" style="width: 100%; margin-bottom: 15px;" title="Create new channel">&#10133;</button>
+      <div id="hide-channels" class="close-btn">&times;</div>
+    </div>
+    <div id="user-list" class="list"></div>
+    
+    <div id="main-bar">
+      <div id="open-channels">&blacktriangleright;</div>
+
+      <div id="new-channel-form" class="shadow p-3 mb-5 bg-white rounded">
+        <div class="form-group">
+          <label for="new-channel-name">Channel Name</label>
+          <input type="text" class="form-control" id="new-channel-name" placeholder="My channel">
+        </div>
+        <div class="form-group">
+          <label for="new-channel-description">Channel description</label>
+          <textarea class="form-control" id="new-channel-description" rows="3"></textarea>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="new-channel-private">
+          <label class="form-check-label" for="new-channel-private">Private</label>
+        </div>
+        <button type="button" class="btn btn-success" id="submit-create-channel">Create</button>
+
+      </div>
+      
+      <div id="channel-details">
+        <button id="info-icon" class="info-icon-style">
+          Info
+        </button>
+        <div id="details" class="shadow p-3 mb-5 bg-white rounded">
+          <button id="close-channel-details" type="button" class="btn-close" aria-label="Close"></button>
+          <div id="edit-channel-name">Channel Name: </div>
+          <div id="channel-creator">Channel Creator: </div>
+          <div id="channel-created">Created at: </div>
+          <div>Channel description: </div>
+          <div id="edit-channel-description"></div>
+          <div>
+            <button id="leave-channel" type="button" class="btn btn-danger">Leave channel</button>
+            <button id="edit-channel" type="button" class="btn btn-secondary">Edit channel</button>
+          </div>
+          
+        </div>
+
+        <div id="edit-channel-details" class="shadow p-3 mb-5 bg-white rounded">
+          <div class="form-group">
+            <label for="change-channel-name">Channel Name</label>
+            <input type="text" class="form-control" id="change-channel-name">
+          </div>
+          <div class="form-group">
+            <label for="change-channel-description">Channel description</label>
+            <textarea class="form-control" id="change-channel-description" rows="3"></textarea>
+          </div>
+          <button id="cancel-edit-channel" type="button" class="btn btn-danger">Cancel</button>
+          <button id="submit-edit-channel" type="button" class="btn btn-success">Submit</button>
+        </div>
+
+        <div id="channel-messages-top">
+          <div id="message-send">
+            <textarea id="message-area" rows="3" cols="125" placeholder="Type message here"></textarea>
+            <button type="button" id="submit-msg" class="message-button">Send</button>
+            <!-- <input type="file" id="submit-img" class="hidden"/>
+            <label class="img-button" for="submit-img">&#x1F5BC;</label> -->
+          </div>
+
+        </div>
+        <div id="channel-messages-body"></div>
+
+        <!-- delete message -->
+        <div id="delete-msg-display" class="shadow p-3 mb-5 bg-white rounded msg-options">
+          <h3>Do you want to delete this message</h3> 
+          <br>
+          <div class="buttons">
+            <button id="cancel-delete-msg" type="button" class="btn btn-danger">Cancel</button>
+            <button id="submit-delete-msg" type="button" class="btn btn-success">Delete</button>
+          </div>
+        </div>
+
+        <!-- edit message -->
+        <div id="edit-msg-display" class="shadow p-3 mb-5 bg-white rounded msg-options">
+          Edit this message:
+          <textarea id="edit-message-area" rows="3" cols="60"></textarea>
+          <div class="buttons">
+            <button id="cancel-edit-msg" type="button" class="btn btn-danger">Cancel</button>
+            <button id="submit-edit-msg" type="button" class="btn btn-success">Edit</button>
+          </div>
+        </div>
+
+        <!-- react to message -->
+        <div id="react-msg-display" class="shadow p-3 mb-5 bg-white rounded msg-options">
+          <h3>How do you want to react:</h3>
+          <button id="close-react" type="button" class="btn-close" aria-label="Close"></button>
+          
+          <div class="reacts">
+            <button id="thumbs-up-react" type="button" class="btn btn-light emoji"><span class="emoji">&#128077;</span></button>
+            <button id="love-heart-react" type="button" class="btn btn-light emoji"><span class="emoji">&#128150;</span></button>
+            <button id="laugh-react" type="button" class="btn btn-light emoji"><span class="emoji">&#128514;</span></button>
+          </div>
+        </div>
+
+        <div id="reactions-display" class="shadow p-3 mb-5 bg-white rounded reactions">
+          <h3>Reactions:</h3>
+          <button id="close-reactions" type="button" class="btn-close" aria-label="Close"></button>
+          <div id="reactions"></div>
+        </div>
+        <!-- pin message -->
+
+        <div id="pin-msg-display" class="shadow p-3 mb-5 bg-white rounded msg-options">
+          <h3>Do you want to pin this message</h3>
+          <div class="buttons">
+            <button id="cancel-pin-msg" type="button" class="btn btn-danger">Cancel</button>
+            <button id="submit-pin-msg" type="button" class="btn btn-success">pin</button>
+          </div>
+        </div>
+
+        <div id="pinned" class="shadow p-3 mb-5 bg-white rounded pinned-messages"></div>
+      </div>
+          
+      <div id="profile-display" class="shadow mb-5 bg-white rounded profile-page"></div>
+      <!-- EDIT PROFILE -->
+      <div id="edit-profile-display" class="shadow mb-5 bg-white rounded edit-profile-page">
+        <h3>Update your details</h3>
+        <div class="form-floating mb-4">
+          <input type="text" class="form-control" id="change-user-name" placeholder="Name:">
+          <label for="change-user-name">Name:</label>
+        </div>
+        <div class="form-floating mb-4">
+          <input type="text" class="form-control" id="change-user-email" placeholder="Email:">
+          <label for="change-user-email">Email:</label>
+        </div>
+        <div class="form-floating mb-4">
+          <input type="password" class="form-control" id="change-user-password" placeholder="New Password">
+          <label for="change-user-password">New Password:</label>
+        </div>
+        <div class="form-floating mb-4">
+          <input type="password" class="form-control" id="confirm-user-password" placeholder="Confirm Password">
+          <label for="confirm-user-password">Confirm Password:</label>
+        </div> 
+        <input type="checkbox" id="show-password"> Show Password
+        <div class="form-group mb-2">
+          <label for="change-user-bio">Bio:</label>
+          <textarea class="form-control" id="change-user-bio" rows="3"></textarea>
+        </div>
+        <div class="buttons">
+          <button id="cancel-edit-profile" type="button" class="btn btn-danger">Cancel</button>
+          <button id="submit-edit-profile" type="button" class="btn btn-success">Edit</button>
+        </div>
+        <div>
+          <label for="change-profile-pic" class="form-label">Change profile picture</label>
+          <input class="form-control" type="file" id="change-profile-pic">
+        </div>
+      </div>
+      <div id="invite-users-display" class=" invite">
+        <div id="invite-users-modal" class="shadow p-3 mb-5 bg-white rounded invite-content">
+          <h3>Select the user(s) you want to invite</h3>
+          <div id="invite-user-list">Invite: </div>
+          <div id="not-members"></div>
+          <div class="buttons">
+            <button id="cancel-invite-user" type="button" class="btn btn-danger">Cancel</button>
+            <button id="submit-invite-user" type="button" class="btn btn-success">Invite</button>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+  <script type="module" src="src/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>

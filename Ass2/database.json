@@ -1,0 +1,624 @@
+{
+  "users": {
+    "18203": {
+      "email": "a@email.com",
+      "name": "a",
+      "password": "a",
+      "bio": null,
+      "image": null,
+      "sessionActive": true
+    },
+    "19633": {
+      "email": "mia@email.com",
+      "name": "Mia",
+      "password": "solongbouldercity",
+      "bio": null,
+      "image": null,
+      "sessionActive": true
+    },
+    "56933": {
+      "email": "email@email.com",
+      "name": "name",
+      "password": "hello",
+      "bio": null,
+      "image": null,
+      "sessionActive": true
+    },
+    "66652": {
+      "email": "d",
+      "name": "d",
+      "password": "d",
+      "bio": null,
+      "image": null,
+      "sessionActive": true
+    },
+    "73977": {
+      "email": "sebastian@email.com",
+      "name": "Sebastian",
+      "password": "chickenonastick",
+      "bio": null,
+      "image": null,
+      "sessionActive": true
+    },
+    "80674": {
+      "email": "l@email.com",
+      "name": "Lionel",
+      "password": "password",
+      "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed tincidunt quam. Quisque aliquam, enim sit amet finibus fermentum, velit ligula tincidunt libero, non condimentum lorem tortor vel quam. Donec sit amet sodales lorem. Maecenas quis maximus elit. Mauris metus ligula, imperdiet a enim ut, volutpat aliquet nibh. Aenean facilisis dui et erat rhoncus bibendum. Praesent id pulvinar velit. In ultricies a justo eget maximus. Sed vitae turpis nec dui molestie placerat. Phasellus ullamcorper egestas nulla nec molestie.",
+      "image": null,
+      "sessionActive": true
+    },
+    "81168": {
+      "email": "aa",
+      "name": "a",
+      "password": "a",
+      "bio": "bio",
+      "image": null,
+      "sessionActive": true
+    },
+    "84722": {
+      "email": "s",
+      "name": "s",
+      "password": "s",
+      "bio": null,
+      "image": null,
+      "sessionActive": true
+    }
+  },
+  "channels": {
+    "101847": {
+      "name": "channel 4",
+      "creator": 81168,
+      "private": true,
+      "description": "",
+      "createdAt": "2022-10-22T05:01:48.373Z",
+      "members": [],
+      "messages": []
+    },
+    "419679": {
+      "name": "foobar",
+      "creator": 81168,
+      "private": false,
+      "description": "foobar",
+      "createdAt": "2022-10-22T05:05:32.439Z",
+      "members": [
+        84722,
+        "66652",
+        66652,
+        80674,
+        56933,
+        18203
+      ],
+      "messages": []
+    },
+    "430593": {
+      "name": "channel 3",
+      "creator": 81168,
+      "private": true,
+      "description": "third channel",
+      "createdAt": "2022-10-22T05:00:40.713Z",
+      "members": [],
+      "messages": []
+    },
+    "619699": {
+      "name": "channel 2",
+      "creator": 81168,
+      "private": true,
+      "description": "",
+      "createdAt": "2022-10-22T04:58:23.208Z",
+      "members": [],
+      "messages": []
+    },
+    "664277": {
+      "name": "question",
+      "creator": 81168,
+      "private": false,
+      "description": "is this fixed",
+      "createdAt": "2022-10-22T05:05:40.604Z",
+      "members": [
+        80674,
+        56933,
+        81168,
+        18203
+      ],
+      "messages": [
+        {
+          "id": 45,
+          "message": "effs",
+          "sender": 81168,
+          "sentAt": "2022-10-24T07:04:40.737Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        }
+      ]
+    },
+    "890135": {
+      "name": "public channel",
+      "creator": 19633,
+      "private": false,
+      "description": "",
+      "createdAt": "2022-10-22T04:44:32.265Z",
+      "members": [
+        19633,
+        73977,
+        81168,
+        84722,
+        80674,
+        56933,
+        18203
+      ],
+      "messages": [
+        {
+          "id": 42,
+          "message": "yeah, i do! i just didn't think that you did",
+          "sender": 19633,
+          "sentAt": "2022-10-22T04:44:32.703Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 41,
+          "message": "do you like the music i'm playing?",
+          "sender": 73977,
+          "sentAt": "2022-10-22T04:44:32.695Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": [
+            {
+              "user": 81168,
+              "react": "laugh"
+            },
+            {
+              "user": 81168,
+              "react": "love-heart"
+            },
+            {
+              "user": 81168,
+              "react": "thumbs-up"
+            }
+          ]
+        },
+        {
+          "id": 40,
+          "message": "well, it matters because if you're gonna give up your dream, i think it matters that you like what you're playing on the road for years",
+          "sender": 19633,
+          "sentAt": "2022-10-22T04:44:32.686Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 39,
+          "message": "i don't... i don't know what it matters",
+          "sender": 73977,
+          "sentAt": "2022-10-22T04:44:32.673Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 38,
+          "message": "do you like the music you're playing?",
+          "sender": 19633,
+          "sentAt": "2022-10-22T04:44:32.665Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 37,
+          "message": "yeah it'll be, this is it. i mean, this is it. it could feasibly be ever. i could be on tour with this... for a couple years at least, just this record",
+          "sender": 73977,
+          "sentAt": "2022-10-22T04:44:32.657Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 36,
+          "message": "um... no, that's not really what i mean. i just mean that you, i mean, you're gonna be on tour for what? months now? years?",
+          "sender": 19633,
+          "sentAt": "2022-10-22T04:44:32.650Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 35,
+          "message": "you didn't think it would be successful",
+          "sender": 73977,
+          "sentAt": "2022-10-22T04:44:32.642Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 34,
+          "message": "i don't... i hadn't really thought it through. i didn't know that the band... was so important",
+          "sender": 19633,
+          "sentAt": "2022-10-22T04:44:32.606Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 33,
+          "message": "i mean, what did you think i was gonna do?",
+          "sender": 73977,
+          "sentAt": "2022-10-22T04:44:32.583Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 32,
+          "message": "i mean the long haul, like you're gonna stay in this band... for a long time... on tour",
+          "sender": 19633,
+          "sentAt": "2022-10-22T04:44:32.577Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 31,
+          "message": "what do you mean \"the long haul\"?",
+          "sender": 73977,
+          "sentAt": "2022-10-22T04:44:32.570Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 30,
+          "message": "so it's like the long haul?",
+          "sender": 19633,
+          "sentAt": "2022-10-22T04:44:32.563Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 29,
+          "message": "you know, we tour so we can make the record so we can go back and tour the record",
+          "sender": 73977,
+          "sentAt": "2022-10-22T04:44:32.556Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 28,
+          "message": "but after we finish, we're gonna go to record and then we'll go back on tour",
+          "sender": 73977,
+          "sentAt": "2022-10-22T04:44:32.549Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 27,
+          "message": "when are you finished with the whole tour?",
+          "sender": 19633,
+          "sentAt": "2022-10-22T04:44:32.542Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 26,
+          "message": "what do you mean? i mean...",
+          "sender": 73977,
+          "sentAt": "2022-10-22T04:44:32.535Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 25,
+          "message": "i know, but when are you done?",
+          "sender": 19633,
+          "sentAt": "2022-10-22T04:44:32.527Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 24,
+          "message": "we're just gonna have to try and see each other, y'know, so that we see each other",
+          "sender": 73977,
+          "sentAt": "2022-10-22T04:44:32.519Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 23,
+          "message": "but... i wish i could",
+          "sender": 19633,
+          "sentAt": "2022-10-22T04:44:32.511Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 22,
+          "message": "well...",
+          "sender": 73977,
+          "sentAt": "2022-10-22T04:44:32.503Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 21,
+          "message": "the best idea right now",
+          "sender": 19633,
+          "sentAt": "2022-10-22T04:44:32.491Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 20,
+          "message": "okay",
+          "sender": 73977,
+          "sentAt": "2022-10-22T04:44:32.470Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 19,
+          "message": "so i don't really think that would be...",
+          "sender": 19633,
+          "sentAt": "2022-10-22T04:44:32.462Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 18,
+          "message": "um... well all my stuff is here and it's in two weeks",
+          "sender": 19633,
+          "sentAt": "2022-10-22T04:44:32.455Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 17,
+          "message": "i mean... i guess",
+          "sender": 73977,
+          "sentAt": "2022-10-22T04:44:32.447Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 16,
+          "message": "...anywhere you are?",
+          "sender": 19633,
+          "sentAt": "2022-10-22T04:44:32.440Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 15,
+          "message": "yeah, but can't you rehearse anywhere?",
+          "sender": 73977,
+          "sentAt": "2022-10-22T04:44:32.432Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 14,
+          "message": "cause i have to rehearse",
+          "sender": 19633,
+          "sentAt": "2022-10-22T04:44:32.424Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 13,
+          "message": "yeah",
+          "sender": 73977,
+          "sentAt": "2022-10-22T04:44:32.417Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 12,
+          "message": "come to boise?",
+          "sender": 19633,
+          "sentAt": "2022-10-22T04:44:32.408Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 11,
+          "message": "why can't you?",
+          "sender": 73977,
+          "sentAt": "2022-10-22T04:44:32.396Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 10,
+          "message": "what are you doing after the tour?",
+          "sender": 19633,
+          "sentAt": "2022-10-22T04:44:32.389Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 9,
+          "message": "oh, that would be... really exciting. i wish i could",
+          "sender": 19633,
+          "sentAt": "2022-10-22T04:44:32.380Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 8,
+          "message": "yeah, you can knock that off your bucketlist",
+          "sender": 73977,
+          "sentAt": "2022-10-22T04:44:32.372Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 7,
+          "message": "to boise?",
+          "sender": 19633,
+          "sentAt": "2022-10-22T04:44:32.349Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 6,
+          "message": "you should come",
+          "sender": 73977,
+          "sentAt": "2022-10-22T04:44:32.341Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 5,
+          "message": "to boise!",
+          "sender": 19633,
+          "sentAt": "2022-10-22T04:44:32.332Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 4,
+          "message": "boise",
+          "sender": 73977,
+          "sentAt": "2022-10-22T04:44:32.323Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 3,
+          "message": "boise?",
+          "sender": 19633,
+          "sentAt": "2022-10-22T04:44:32.314Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 2,
+          "message": "yeah, 6:45. boise",
+          "sender": 73977,
+          "sentAt": "2022-10-22T04:44:32.306Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        },
+        {
+          "id": 1,
+          "message": "when do you leave? in the morning?",
+          "sender": 19633,
+          "sentAt": "2022-10-22T04:44:32.296Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        }
+      ]
+    },
+    "925328": {
+      "name": "dwda",
+      "creator": 81168,
+      "private": false,
+      "description": "",
+      "createdAt": "2022-10-24T07:10:22.574Z",
+      "members": [
+        81168
+      ],
+      "messages": [
+        {
+          "id": 46,
+          "message": "hello",
+          "sender": 81168,
+          "sentAt": "2022-10-24T07:10:40.024Z",
+          "edited": false,
+          "editedAt": null,
+          "pinned": false,
+          "reacts": []
+        }
+      ]
+    },
+    "952369": {
+      "name": "Channel",
+      "creator": 81168,
+      "private": true,
+      "description": "",
+      "createdAt": "2022-10-22T05:01:40.617Z",
+      "members": [
+        81168,
+        19633
+      ],
+      "messages": []
+    }
+  },
+  "nextMessageId": 47
+}
