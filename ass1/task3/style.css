@@ -1,0 +1,134 @@
+/* big screen */
+@media screen and (max-width: 3200px) {
+    .background {
+        width: 1022px;
+        height: 665px;
+        font-family: Arial;
+    }
+    .top-section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 166px;
+    }
+
+    .bottom-section{
+        background-color: #daf0f3;
+        height: 50%;
+    }
+
+    .bottom-squares {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0px 40px 40px 40px;
+    }
+    .square {
+        border-radius: 20px;
+        height: 140px;
+        width: 220px;
+        padding-top: 40px;
+        font-size: 24px;
+        color: white;
+        text-align: center;
+
+    }
+    #blue-square {
+        background-color: #69b4c0;
+    }
+
+    #red-square {
+        background-color: #da170d;
+    }
+
+    .images {
+        padding: 5px 50px 0px 50px;
+        position: relative;
+        left: 20px;
+    }
+    .caption {
+        padding: 40px 50px 50px 50px;
+        color: #24bfdb;
+        font-weight: bold;
+        text-align: center;
+        position: relative;
+        right: 10px;
+    }
+    
+
+}
+
+
+@media screen and (max-width: 1000px) { 
+    .background {
+        width: 585px;
+        height: 2902px;
+        font-family: Arial;
+    }
+    .images {
+        width: 300px;
+        height: 400px;
+        position: relative;
+        left: 90px;
+        top: 265px;
+    }
+
+    .caption {
+        padding: 40px 50px 50px 50px;
+        color: #24bfdb;
+        font-weight: bold;
+        text-align: center;
+        font-size: 25px;
+        position: relative;
+        bottom: 200px;
+    }
+
+    .top-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 725.5px;
+    }
+
+    .bottom-section{
+        background-color: #daf0f3;
+        height: 50%;
+    }
+
+    .bottom-squares {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 80%;
+    }
+
+    .square {
+        border-radius: 20px;
+        height: 220px;
+        width: 465px;
+        padding-top: 50px;
+        font-size: 50px;
+        color: white;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 50pt;
+        margin-bottom: 10px
+    }
+
+    h5 {
+        font-size: 28pt;
+        line-height: 2.2;
+        margin: 0px;
+    }
+
+    #blue-square {
+        background-color: #69b4c0;
+    }
+
+    #red-square {
+        background-color: #da170d;
+    }
+}

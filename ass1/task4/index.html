@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
+    <title>Task 4</title>
+    <script type="text/javascript" src="index.js" ></script>
+    <style>
+        table, td, td {
+            border:1px solid rgb(121, 121, 121);
+        }
+    </style>
+</head>
+<body>
+    <form name="input">
+        <table>
+            <tr>
+                <td>First name:</td>
+                <td>
+                    <input type="text" name="firstname" onblur="validFirstName()">
+                </td>
+                
+            </tr>
+            <tr>
+                <td>Last name</td>
+                <td>
+                    <input type="text" name="lastname" onblur="validLastName()">
+                </td>
+            </tr>
+            <tr>
+                <td>Date of birth</td>
+                <td>
+                    <input type="text" name="birthdate" onblur="validBirthDate()">
+                </td>
+            </tr>
+            <tr>
+                <td>Favourite Cheese</td>
+                <td>
+                    <select name="Cheese" onchange="printOutput()">
+                        <option value="Haloumi">Haloumi</option>
+                        <option value="Brie">Brie</option>
+                    </select><br>
+                </td>
+            </tr>
+            <tr>
+                <td>Cities lived in</td>
+                <td>
+                    <span id="city" onclick="printOutput()">
+                        <input type="checkbox" name="city" value="Adelaide">
+                        <label for="city1">Adelaide</label><br>
+
+                        <input type="checkbox" name="city" value="Perth">
+                        <label for="city2">Perth</label><br>
+
+                        <input type="checkbox" name="city" value="Hobart">
+                        <label for="city3">Hobart</label><br>
+
+                        <input type="checkbox" name="city" value="Darwin">
+                        <label for="city4">Darwin</label><br>
+
+                    </span>
+                    
+                </td>
+            </tr>
+        </table><br>
+
+        <input type="reset" value="Remove" onclick="clearForm()">
+    </form><br>
+    <form>
+        <textarea id="output" cols="60" rows="10">
+        </textarea>
+    </form>
+    
+
+</script>
+</body>
+</html>

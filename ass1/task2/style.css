@@ -1,0 +1,118 @@
+.background {
+    background-color: #f0efee;
+    width: 1283px;
+    height: 699px;
+    font-family: Arial;
+    padding: 70px;
+}
+
+.header {
+    font-size: 15px;
+}
+
+.bottom-section {
+    display: flex;
+	flex-direction: row;
+    justify-content: space-between;
+}
+
+.content {
+    background-color: white;
+    width: 360px;
+	height: 420px;
+    margin: 5px;
+	padding: 5px;
+}
+
+.inside-content {
+    text-align: center;
+}
+
+sup {
+    font-size: 12px;
+}
+
+#top-line {
+    font-size: 30px;
+
+}
+
+#middle-line{
+    font-size: 12px;
+    margin-top: -30px;
+    font-weight: 700;
+
+}
+
+#bottom-line {
+    font-size: 18px;
+    font-weight: 600;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+svg {
+    height: 30px;
+	width: 30px;
+	margin: 13px 13px 5px 13px;
+    color: #008228;
+    fill: currentColor;
+    display: inline;
+}
+
+
+
+span {
+    position: relative;
+    top: -15px;
+    color: #008228;
+    font-size: 20px;
+}
+
+.dash-line {
+    width: 35px;
+	height: 2px;
+	border-top: black solid;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+.line-with-shadow {
+    width: 360px;
+	height: 1px;
+	border-color: black;
+	box-shadow: 0px 2px 3px #696969;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+
+.left-content {
+    text-align: center;
+    font-size: 18px;
+}
+
+.Find-out-more-button {
+    background-color: #008228;
+    display: flex;
+    font-size: 20px;
+    color: white;
+    width: 200px;
+    height: 35px;
+    margin: auto;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.Find-out-more-button:hover {
+    cursor: pointer;
+    background-color: #1e1e1e;
+}
+
+.bottom-content {
+    font-size: 12px;
+    padding-top: 30px;
+    color: gray;
+    text-align: center;
+}
